@@ -170,6 +170,9 @@ function create(directory, extension) {
 		});
 	};
 	rendererWrapper.cache = cache;
+  rendererWrapper.setCustomTags = function(customTags) {
+		mustache.tags = customTags;
+	}
 	return rendererWrapper;
 }
 

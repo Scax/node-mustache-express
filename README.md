@@ -24,3 +24,8 @@ The return function has a `cache` parameter that is an [LRU Cache](https://githu
 
     var engine = mustacheExpress();
     var cache = engine.cache; // Caches the full file name with some internal data.
+
+## Mustache Custom Delimiters
+ Set your own [Custom Mustache Delimiters](https://github.com/janl/mustache.js/#custom-delimiters)
+
+    mustacheExpress().setCustomTags( [ '<%', '%>' ] )
